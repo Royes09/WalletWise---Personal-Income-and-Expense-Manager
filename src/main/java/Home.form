@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Home">
+  <grid id="27dc6" binding="homePanel" layout-manager="GridLayoutManager" row-count="8" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="953" height="478"/>
+    </constraints>
+    <properties>
+      <background color="-15395814"/>
+      <visible value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="37a40" binding="navbarPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="11" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16751514"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d2142" class="javax.swing.JLabel" binding="ImageLogo" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16751514"/>
+              <enabled value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="7a52d" class="javax.swing.JLabel" binding="homenickname" custom-create="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="af816" class="javax.swing.JButton" binding="logoutButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Logout"/>
+            </properties>
+          </component>
+          <hspacer id="60a59">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <scrollpane id="5190f" binding="tranzactiiScrollPane" custom-create="true">
+        <constraints>
+          <grid row="5" column="4" row-span="3" col-span="6" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2af2c" class="javax.swing.JList" binding="transactionList" custom-create="true">
+            <constraints/>
+            <properties>
+              <background color="-14606036"/>
+              <requestFocusEnabled value="true"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="183c4" class="javax.swing.JTextField" binding="searchBarText" custom-create="true">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="30"/>
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14606036"/>
+          <foreground color="-65537"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9c8e7" class="javax.swing.JLabel" binding="searchBacIcon" custom-create="true">
+        <constraints>
+          <grid row="2" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16751514"/>
+          <enabled value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c7fc8" class="javax.swing.JButton" binding="newTransaction">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540244"/>
+          <focusPainted value="false"/>
+          <foreground color="-12350474"/>
+          <text value="New Transaction"/>
+        </properties>
+      </component>
+      <hspacer id="12270">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="985a5" class="javax.swing.JLabel" binding="noTransactionsLabel">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusable value="false"/>
+          <foreground color="-1"/>
+          <text value="No transactions to display."/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <scrollpane id="98f76" binding="accountsScrollPane" custom-create="true">
+        <constraints>
+          <grid row="2" column="0" row-span="4" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14606036"/>
+          <foreground color="-65537"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1715" class="javax.swing.JList" binding="accountsList" custom-create="true">
+            <constraints/>
+            <properties>
+              <background color="-14606036"/>
+              <foreground color="-65537"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="bed6b" class="javax.swing.JButton" binding="addNewProfileButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540244"/>
+          <focusPainted value="false"/>
+          <foreground color="-12350474"/>
+          <text value="Add new profile"/>
+        </properties>
+      </component>
+      <hspacer id="739ca">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <grid id="6929e" binding="statistics" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14606036"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="8e5c1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <font size="16"/>
+              <foreground color="-1"/>
+              <text value="Balance:"/>
+            </properties>
+          </component>
+          <component id="25781" class="javax.swing.JLabel" binding="balanceLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <font size="16"/>
+              <foreground color="-1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <hspacer id="ee2a4">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <component id="79ab2" class="javax.swing.JButton" binding="editTransaction">
+        <constraints>
+          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540244"/>
+          <focusPainted value="false"/>
+          <foreground color="-12350474"/>
+          <text value="Edit"/>
+        </properties>
+      </component>
+      <component id="24346" class="javax.swing.JButton" binding="importTransactions">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14540244"/>
+          <focusPainted value="false"/>
+          <foreground color="-12350474"/>
+          <text value="Import Bank Statement"/>
+        </properties>
+      </component>
+      <component id="3fbde" class="javax.swing.JButton" binding="deleteTransaction">
+        <constraints>
+          <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-8900046"/>
+          <focusPainted value="false"/>
+          <foreground color="-1"/>
+          <text value="Delete"/>
+        </properties>
+      </component>
+      <component id="8e331" class="javax.swing.JButton" binding="deleteProfile">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-8900046"/>
+          <focusPainted value="false"/>
+          <foreground color="-1"/>
+          <text value="Delete profile"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
